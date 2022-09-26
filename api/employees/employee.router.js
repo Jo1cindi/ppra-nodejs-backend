@@ -1,9 +1,9 @@
 
 const router = require("express").Router();
-// const addEmployee = require("../../controllers/employee.controller")
+const addEmployee = require("../../controllers/employee.controller")
 
 
-router.post("/", (req, res)=>{
+router.post("/", addEmployee, (req, res)=>{
   try{
     res.json({
       status: 200,
