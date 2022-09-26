@@ -17,7 +17,7 @@ app.use("/api/accountant", accountantRouter)
 const fmRouter  = require("./api/financemanager/financemanager.router")
 app.use("/api/finance-manager", fmRouter)
 
-app.listen(process.env.PORT || PORT, ()=>{
+app.listen(process.env.PORT, ()=>{
     console.log(`Server is perfectly running on ${process.env.APP_PORT}`)
 })
 module.exports = app;
