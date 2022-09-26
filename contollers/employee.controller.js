@@ -1,7 +1,7 @@
 const dbConnection = require("../config/database");
 
 const addEmployee = (res, req) =>{
-    const firstName = req.body.firstName;
+    const firstName = req.firstName;
     const lastName = req.body.lastName;
     const email = req.body.email;
     const phoneNumber = req.body.phoneNumber;
