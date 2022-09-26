@@ -1,4 +1,4 @@
-// const dbConnection = require("../../config/database")
+const dbConnection = require("../../config/database")
 const router = require("express").Router();
 
 
