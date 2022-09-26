@@ -1,19 +1,19 @@
-const dbConnection = require("../../config/database")
+// const dbConnection = require("../../config/database")
 const router = require("express").Router();
 
 
 router.post("/", async (req, res) => {
-  const firstName = req.body.firstName;
-  const lastName = req.body.lastName;
-  const email = req.body.email;
-  const phoneNumber = req.body.phoneNumber;
-  const password = req.body.password;
+  // const firstName = req.body.firstName;
+  // const lastName = req.body.lastName;
+  // const email = req.body.email;
+  // const phoneNumber = req.body.phoneNumber;
+  // const password = req.body.password;
 
-  dbConnection.query(
-    `insert into employees(firstName, lastName, email, phoneNumber, password) values(?,?,?,?,?)`,
-    [firstName, lastName, email, phoneNumber, password],
+  // dbConnection.query(
+  //   `insert into employees(firstName, lastName, email, phoneNumber, password) values(?,?,?,?,?)`,
+  //   [firstName, lastName, email, phoneNumber, password],
     
-  );
+  // );
   try{
     res.json({
       status: 200,
