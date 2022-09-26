@@ -11,6 +11,12 @@ app.use(bodyParser.json());;
 const employeeRouter  = require("./api/employees/employee.router")
 app.use("/api/employee", employeeRouter)
 
+const accountantRouter = require("./api/accountant/accountant.router")
+app.use("/api/accountant", accountantRouter)
+
+const fmRouter  = require("./api/financemanager/financemanager.router")
+app.use("/api/finance-manager", fmRouter)
+
 app.listen(process.env.APP_PORT, ()=>{
     console.log(`Server is perfectly running on ${process.env.APP_PORT}`)
 })
