@@ -2,7 +2,7 @@ const dbConnection = require("../../config/database")
 const router = require("express").Router();
 
 
-router.post("/", async (req, res) => {
+router.post("/", (req, res) => {
   const firstName = req.body.firstName;
   const lastName = req.body.lastName;
   const email = req.body.email;
