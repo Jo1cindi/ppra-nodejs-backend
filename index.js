@@ -1,4 +1,4 @@
-// require("dotenv").config();
+require("dotenv").config();
 const express = require("express");
 const bodyParser  = require("body-parser");
 const app = express();
@@ -15,9 +15,10 @@ const accountantRouter = require("./api/accountant/accountant.router")
 app.use("/api/accountant", accountantRouter)
 
 const fmRouter  = require("./api/financemanager/financemanager.router")
-app("/api/finance-manager", fmRouter)
+app.use("/api/finance-manager",fmRouter)
 
-app.listen(process.env.PORT, ()=>{
-    console.log(`Server is perfectly running on ${process.env.APP_PORT}`)
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, ()=>{
+    console.log(`Server is perfectly running on ${PORT}`)
 })
 module.exports = app;
