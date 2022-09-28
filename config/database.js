@@ -15,6 +15,8 @@ dbConnection.connect((error)=>{
     if(error) throw error
     console.log("Database connected successfully")
 });
-
+setInterval(function () {
+    dbConnection.query('SELECT 1');
+}, 5000);
 //exporting
 module.exports = dbConnection;
