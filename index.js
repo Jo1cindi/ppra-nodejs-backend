@@ -8,7 +8,7 @@ app.use(express.json({extended: false}))
 app.use(cors({
     origin: "*",
     credentials: true,
-    methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']
+    methods: ['GET','POST','DELETE','UPDATE','PUT']
 }))
 
 
