@@ -1,4 +1,4 @@
-require("dotenv").config();
+// require("dotenv").config();
 const express = require("express");
 const bodyParser  = require("body-parser");
 const app = express();
@@ -21,4 +21,3 @@ const PORT = process.env.PORT || 3006;
 app.listen(PORT, ()=>{
     console.log(`Server is perfectly running on ${PORT}`)
 })
-module.exports = app;
