@@ -17,7 +17,6 @@ app.use("/api/accountant", accountantRouter)
 const fmRouter  = require("./api/financemanager/financemanager.router")
 app.use("/api/finance-manager",fmRouter)
 
-const PORT = process.env.PORT || 3006;
-app.listen(PORT, ()=>{
-    console.log(`Server is perfectly running on ${PORT}`)
+app.listen(process.env.PORT || 3006, () => {
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env)
 })
