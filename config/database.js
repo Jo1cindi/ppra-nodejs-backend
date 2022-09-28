@@ -1,5 +1,7 @@
 //configuring mysql db
 const mysql = require("mysql")  //importing mysql
+require('dotenv').config();
+
 
 //mysql connection
 const dbConnection = mysql.createConnection({
